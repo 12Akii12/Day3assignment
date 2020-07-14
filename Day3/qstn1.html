@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 Assginment qstn 1</title>
+    <h1>Day3 Assginment qstn 1 display various console method</h1>
+</head>
+<body>
+    <script>
+
+        //used to know the amount of time required by block or function to excecute the code
+        console.time("hmm");
+        //used to print the output on console
+        console.log("hello everyone");
+        //used to display error msg on console
+        console.error("this is the error!");
+        //used to display warning msg on console
+        console.warn("this is warning to every1!!");
+
+
+        var a={name:"ajay", age:"15", sex:"male"}
+        var b={name:"amruta", age:"30", sex:"female"}
+        var c={name:"ram", age:"34", sex:"male"}
+        //used to display the object in tabular format 
+        console.table({a,b,c});
+
+
+        //used to count the number of time object, function, varibale will be encounter
+        console.count(a);
+
+        //used to create a group and hold the content in seperate block
+        console.group("start");
+        console.log("hey welcome back");
+        console.warn("dont touch");
+        console.error("dangerous to health");
+        console.groupEnd("end");
+
+
+        console.timeEnd("hmm");
+        
+    </script>
+
+    
+</body>
+</html>

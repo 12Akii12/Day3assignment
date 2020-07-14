@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //you can redeclred and re-update var variable
+        //var variable is function scoped
+        var a="10";
+        console.log(a);
+        var a="20";
+        console.log(a);
+
+        //you can't redeclred let varibale but you can reupdate it
+        //let varibale is block scoped
+        let b="30";
+            b="40";
+        console.log(b);
+        //here U got b=40 updated value
+
+        //let b;
+        //U got Uncaught SyntaxError: Identifier 'b' has already been declared
+
+        {
+            //b is limited to block1 only i.e block scoped
+            let b="50";
+            console.log(b);
+        }
+        {
+            //block 2  takes inital value of b
+            b++;
+            console.log(b);
+        }
+
+        //const variable used to declred the constant value and it can't be updated...
+        const x="12";
+        console.log(x);
+        x="100";//it gives Uncaught TypeError: Assignment to constant variable.
+
+    </script>
+</body>
+</html>
